@@ -2,7 +2,7 @@ const funcloaded = require('./2127');
 
 describe('2127. Maximum Employees to Be Invited to a Meeting', function () {
     beforeEach(()=>{
-        console.log('======================================================')
+        console.log('=======================================================')
     });
     it('Test Case 1', () => {
         expect(funcloaded([2,2,1,2])).toBe(3);
