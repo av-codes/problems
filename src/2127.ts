@@ -1,9 +1,12 @@
 let seatingIndex: number[] = [];
 let cutLength = 0;
 function maximumInvitations(favorite: number[]): number {
-  seatingIndex.push(favorite[0]);
-  linkEmp(favorite, favorite[0], favorite[0]);
 
+  let startInsert = favorite[0];
+  seatingIndex.push(startInsert);
+//   favorite.splice(0, 1);
+//   cutLength += 1;
+  linkEmp(favorite, startInsert, startInsert);
   return seatingIndex.length;
 }
 function linkEmp(
@@ -24,7 +27,13 @@ function linkEmp(
         return 0;
     }
   } else {
-    linkEmp(curFavorite, lastFav, lastFav);
+      if(curFavorite.indexOf(lastInsert)>-1){
+        linkEmp(curFavorite, lastFav, lastInsert);
+      }
+      else {
+        linkEmp(curFavorite, lastInsert, lastFav);
+      }
+    
   }
 }
 module.exports = maximumInvitations;
