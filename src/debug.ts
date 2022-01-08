@@ -1,4 +1,4 @@
-const funcloaded = require('./2127');
+const funcDebug = require('./66');
 
 
-console.log(funcloaded([2,2,1,2]));
+console.log(funcDebug([1,2,3]));

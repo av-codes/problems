@@ -5,9 +5,10 @@
   "main": "index.js",
   
   "scripts": {
-    "test": "tsc &&  jest 2.test.js",
+    "test": "tsc &&  jest 67.test.js",
     "dev:test": " nodemon --watch './src/' --ext 'ts,js,json' --ignore '/*.spec.ts' --exec 'npm' test",
-    "dev":"tsc  && node debug.ts"
+    "dev":"tsc  && node debug.ts",
+    "new": "cp new.ts.x 0.ts && cp new.test.x 0.test.js"
   },
   "author": "",
   "license": "ISC",
