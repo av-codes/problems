@@ -12,7 +12,7 @@ module.exports = FUNC;
     }
     const assert = require('assert');
     
-    function testcase(input, expect) {
+    const testcase = (input, expect) => {
         result = reverseString.apply(null, input);
         result = input;
         expected = expect;
@@ -21,7 +21,7 @@ module.exports = FUNC;
         console.log("Expected: ",expected)
         
         assert.ok(result,expected,new Error(setErr(result,expected)));
-    }
+    };
 
     testcase([[2,7,11,15], 9],[1,2]); 
 }

@@ -2,12 +2,12 @@
  Do not return anything, modify nums in-place instead.
  */
  function rotate(nums: number[], k: number): number[] {
-    console.log('Input: ', nums, k);
+    //console.log('Input: ', nums, k);
     while(k>0){
         k--;
         let num =nums.pop();
         nums.unshift(num);
-        console.log(nums);
+        //console.log(nums);
     }
     return nums;
 };
@@ -33,3 +33,4 @@ module.exports = rotate;
     
     assert.deepEqual(result,expected,new Error(setErr(result,expected)));
 }
+

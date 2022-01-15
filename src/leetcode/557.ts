@@ -12,7 +12,7 @@ module.exports = reverseWords;
     }
     const assert = require('assert');
     
-    function testcase(input, expect) {
+    const testcase = (input, expect) => {
         result = reverseWords.apply(null, input);
         //result = input;
         expected = expect;
@@ -21,7 +21,7 @@ module.exports = reverseWords;
         console.log("Expected: ",expected)
         
         assert.ok(result,expected,new Error(setErr(result,expected)));
-    }
+    };
 
     testcase([ "Let's take LeetCode contest"], "s'teL ekat edoCteeL tsetnoc"); 
 }

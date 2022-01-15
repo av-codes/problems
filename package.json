@@ -1,13 +1,13 @@
 {
-  "name": "code",
+  "name": "ts-problems",
   "version": "1.0.0",
-  "description": "",
+  "description": "Repo for solving problems with Typescript",
   "main": "index.js",
-  
   "scripts": {
-    "test": "tsc &&  jest",
-    "prob": " nodemon --watch './src/' --ext 'ts,js,json' --ignore '/*.spec.ts' --exec 'tsc &&  jest 344.test'",
-    "dev":"tsc  && node debug.ts"
+    "test:all": "tsc &&  jest",
+    "config": "export $(cat .env | xargs) && env",
+    "prob:curr": "nodemon --watch './src/' --ext 'ts,js,json' --ignore '/*.spec.ts' --exec 'tsc && export $(cat .env | xargs) && jest $CURR_TEST'",
+    "dev": "tsc && npx ts-node ./src/debug.ts"
   },
   "author": "Aravind Vadamalaimuthu",
   "license": "ISC",
@@ -22,5 +22,8 @@
     "ts-jest": "^27.1.2",
     "ts-node": "^10.4.0",
     "typescript": "^4.5.4"
+  },
+  "dependencies": {
+    "dotenv": "^12.0.3"
   }
 }
