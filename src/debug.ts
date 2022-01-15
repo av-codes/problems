@@ -1,4 +1,4 @@
-const funcDebug = require('./66');
+const funcDebug = require('./557');
 
 
-console.log(funcDebug([1,2,3]));
+console.log(funcDebug(0));

@@ -1,16 +1,21 @@
-const funcloaded = require('./0');
+const funcloaded = require('./5931');
 
-describe('43. Multiply Strings', function () {
+describe('5931. Stamping the Grid', function () {
     beforeEach(()=>{
         console.log('======================================================')
     });
     it('Test Case 1', () => {
-        expect(funcloaded("2", "3")).toBe("6");
+        expect(funcloaded(0)).toBe(0);
     });
 
     it('Test Case 2', () => {
 
-        expect(funcloaded("123", "456")).toBe("56088");
+        expect(funcloaded(0)).toBe(0);
+    });
+
+    it('Test Case 3', () => {
+
+        expect(funcloaded(0)).toBe(0);
     });
 
     afterEach(()=>{

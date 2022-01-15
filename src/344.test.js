@@ -1,6 +1,6 @@
-const funcloaded = require('./000');
+const funcloaded = require('./344');
 
-describe('XXX', function () {
+describe('344. Reverse String', function () {
     beforeEach(()=>{
         console.log('======================================================')
     });
@@ -22,15 +22,16 @@ describe('XXX', function () {
     });
 
 
-    it('Test Case 3', () => {
+    // it('Test Case 3', () => {
 
-        let s = ["H","a","n","n","a","h"]
-        let input = [s];
-        funcloaded.apply(null,input);
+    //     let s = ["H","a","n","n","a","h"]
+    //     let input = [s];
+    //     funcloaded.apply(null,input);
 
-        expect(s).toStrictEqual(["h","a","n","n","a","H"]);
-    });
+    //     expect(s).toStrictEqual(["h","a","n","n","a","H"]);
+    // });
 
+    
     afterEach(()=>{
        console.log('=====================================================')
     });
