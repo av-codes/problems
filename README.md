@@ -6,6 +6,6 @@ Learn more to use our repo at https://av-codes.github.io/ts-problems/
 
 Or Vist our temporary community site (Beta) at https://coderspost.wordpress.com/
 
-Personal blog site 
+Personal blog site https://dev-post.hashnode.dev/
 
 
