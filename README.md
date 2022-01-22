@@ -4,5 +4,8 @@ Your problems solved in Typescript, feel free to add new problems and solve it y
 
 Learn more to use our repo at https://av-codes.github.io/ts-problems/
 
-Or Vist our community site at https://coderspost.wordpress.com/
+Or Vist our temporary community site (Beta) at https://coderspost.wordpress.com/
+
+Personal blog site 
+
 
