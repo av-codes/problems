@@ -22,6 +22,4 @@ Find this series growing at [ts-problems series](https://dev-post.hashnode.dev/s
 
 Feel free to contribute to this repo and also you can comment on this blog series posts for continuous improvements and do support my efforts in these initiatives.
 
-%[https://github.com/av-codes/ts-problems#readme]
 
-[:link: Readme](https://github.com/av-codes/ts-problems#readme)
