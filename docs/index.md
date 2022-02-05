@@ -1,37 +1,23 @@
-## Welcome to GitHub Pages
+# ts-problems
 
-You can use the [editor on GitHub](https://github.com/av-codes/ts-problems/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
+Your problems solved in Typescript, feel free to add new problems, it only a deck to add problems and solve it yourself or our community will do it soon.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Project github page at https://av-codes.github.io/ts-problems/
 
-### Markdown
+Or Vist our temporary community site (Beta only) at https://coderspost.wordpress.com/
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Active Personal blog site https://dev-post.hashnode.dev/
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+# How to use the repo
 
-- Bulleted
-- List
+As usual clone this repo and use npm i to install the dependancies and then you start by running the npm scripts to start making the repo work.
 
-1. Numbered
-2. List
+Besides this we have gulp script for some automatication in adding new problem source pages with default test.
 
-**Bold** and _Italic_ and `Code` text
+Also review you have a .env created and is pointing to the problem of your concern so that you are not flooded running other problems for the jest testing script.
 
-[Link](url) and ![Image](src)
-```
+# Feel free to raise pull requests if you feel it can be constructive.
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+Also if you are stuck you can comment about a specific problem in my personal blog site page here, myself or our community may help finding the solution in some time.
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/av-codes/problems/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
