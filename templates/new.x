@@ -14,7 +14,7 @@ module.exports = FUNC;
     
     const testcase = (input, expect) => {
         result = reverseString.apply(null, input);
-        result = input;
+        //result = input;
         expected = expect;
         
         console.log("Output: ",result)

@@ -1,34 +1,34 @@
-const funcloaded = require('./000');
+const funcloaded = require('./13');
 
-describe('XXX', function () {
+describe('13. Roman to Integer', function () {
     beforeEach(()=>{
         console.log('======================================================')
     });
     it('Test Case 1', () => {
-        let s = ["h","e","l","l","o"]
+        let s = "III";
         let input = [s];
         let res = funcloaded.apply(null,input);
 
-        expect(res).toStrictEqual(["o","l","l","e","h"]);
+        expect(res).toBe(3);
     });
 
     it('Test Case 2', () => {
 
-        let s = ["H","a","n","n","a","h"]
+        let s = "LVIII";
         let input = [s];
         let res = funcloaded.apply(null,input);
 
-        expect(res).toStrictEqual(["h","a","n","n","a","H"]);
+        expect(res).toBe(58);
     });
 
 
     it('Test Case 3', () => {
 
-        let s = ["H","a","n","n","a","h"]
+        let s = "MCMXCIV";
         let input = [s];
         let res = funcloaded.apply(null,input);
 
-        expect(res).toStrictEqual(["h","a","n","n","a","H"]);
+        expect(res).toBe(1994);
     });
 
     afterEach(()=>{
