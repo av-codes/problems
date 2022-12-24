@@ -15,7 +15,7 @@ module.exports = new_func;
     const assert = require('assert');
     
     const testcase = (input, expect) => {
-        result = reverseString.apply(null, input);
+        result = new_func.apply(null, input);
         result = input;
         expected = expect;
         

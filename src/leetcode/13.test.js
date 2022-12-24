@@ -1,4 +1,4 @@
-const funcloaded = require('./13');
+const funcLoaded = require('./13');
 
 describe('13. Roman to Integer', function () {
     beforeEach(()=>{
@@ -7,7 +7,7 @@ describe('13. Roman to Integer', function () {
     it('Test Case 1', () => {
         let s = "III";
         let input = [s];
-        let res = funcloaded.apply(null,input);
+        let res = funcLoaded.apply(null,input);
 
         expect(res).toBe(3);
     });
@@ -16,7 +16,7 @@ describe('13. Roman to Integer', function () {
 
         let s = "LVIII";
         let input = [s];
-        let res = funcloaded.apply(null,input);
+        let res = funcLoaded.apply(null,input);
 
         expect(res).toBe(58);
     });
@@ -26,7 +26,7 @@ describe('13. Roman to Integer', function () {
 
         let s = "MCMXCIV";
         let input = [s];
-        let res = funcloaded.apply(null,input);
+        let res = funcLoaded.apply(null,input);
 
         expect(res).toBe(1994);
     });

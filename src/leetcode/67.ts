@@ -1,25 +1,40 @@
 function addBinary(a: string, b: string): string {
-  let carry:number =0;
-  let sum:number =0;
-  let newdigit:number = 0;
-  let arrA: number[] = [];
-  a.split('').forEach((char)=>{
-    arrA.push(parseInt(char));
-  });
-  let arrB: number[] = [];
-  b.split('').forEach((char)=>{
-    arrB.push(parseInt(char));
-  });
-  
-  let result:number[] = [];
-  for(let i=arrA.length-1; i>=0;i--){
-     sum = arrA[i]+carry;
-     carry = Math.floor(sum/10);
-     newdigit =sum%10;
-     result.unshift(newdigit);
+  // initialize variables to store the sum and carry
+  let sum = "";
+  let carry = 0;
+
+  // iterate through the strings from right to left
+  for (let i = 0; i < Math.max(a.length, b.length); i++) {
+    // get the ith digit of each string, or 0 if the string is not long enough
+    const ai = parseInt(a[a.length - 1 - i]) || 0;
+    const bi = parseInt(b[b.length - 1 - i]) || 0;
+
+    // add the digits and the carry
+    let digitSum = ai + bi + carry;
+
+    // if the sum is greater than or equal to 2
+    if (digitSum >= 2) {
+      // set the carry to 1
+      carry = 1;
+      // set the sum to the remainder
+      digitSum = digitSum % 2;
+    }
+    // otherwise, set the carry to 0
+    else {
+      carry = 0;
+    }
+
+    // append the sum to the result string
+    sum = digitSum.toString() + sum;
   }
-  carry ? result.unshift(carry): 0 ;
-  return '';
+
+  // if there is a carry left over
+  if (carry === 1) {
+    // append the carry to the result string
+    sum = "1" + sum;
+  }
+
+  return sum;
 };
 
 module.exports = addBinary;

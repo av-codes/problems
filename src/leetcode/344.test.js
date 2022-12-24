@@ -1,4 +1,4 @@
-const funcloaded = require('./344');
+const funcLoaded = require('./344');
 
 describe('344. Reverse String', function () {
     beforeEach(()=>{
@@ -7,7 +7,7 @@ describe('344. Reverse String', function () {
     it('Test Case 1', () => {
         let s = ["h","e","l","l","o"]
         let input = [s];
-        funcloaded.apply(null,input);
+        funcLoaded.apply(null,input);
 
         expect(s).toStrictEqual(["o","l","l","e","h"]);
     });
@@ -16,7 +16,7 @@ describe('344. Reverse String', function () {
 
         let s = ["H","a","n","n","a","h"]
         let input = [s];
-        funcloaded.apply(null,input);
+        funcLoaded.apply(null,input);
 
         expect(s).toStrictEqual(["h","a","n","n","a","H"]);
     });
@@ -26,7 +26,7 @@ describe('344. Reverse String', function () {
 
     //     let s = ["H","a","n","n","a","h"]
     //     let input = [s];
-    //     funcloaded.apply(null,input);
+    //     funcLoaded.apply(null,input);
 
     //     expect(s).toStrictEqual(["h","a","n","n","a","H"]);
     // });

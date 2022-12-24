@@ -1,10 +1,16 @@
 function reverseWords(s: string): string {
-    return '';
+    const words = s.split(' ');
+
+  // Reverse the characters in each word
+  const reversedWords = words.map(word => word.split('').reverse().join(''));
+
+  // Join the reversed words with the original whitespace
+  return reversedWords.join(' ');
 };
 
 module.exports = reverseWords;
 {
-     let result:any []= null;
+    let result:any []= null;
     let expected:any []= null;
 
     const setErr = (result,expected)=>{
@@ -24,4 +30,5 @@ module.exports = reverseWords;
     };
 
     testcase([ "Let's take LeetCode contest"], "s'teL ekat edoCteeL tsetnoc"); 
+    testcase(["God Ding"], "doG gniD"); 
 }

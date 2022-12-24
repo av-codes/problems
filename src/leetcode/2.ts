@@ -1,16 +1,16 @@
-class ListNode {
+class ListNode2 {
   val: number;
-  next: ListNode | null;
-  constructor(val?: number, next?: ListNode | null) {
+  next: ListNode2 | null;
+  constructor(val?: number, next?: ListNode2 | null) {
     this.val = val === undefined ? 0 : val;
     this.next = next === undefined ? null : next;
   }
-}
+};
 
 function addTwoNumbers(
-  l1: ListNode | null,
-  l2: ListNode | null
-): ListNode | null {
+  l1: ListNode2 | null,
+  l2: ListNode2 | null
+): ListNode2 | null {
   let output: number[] = [];
   let carry: number = 0;
   let sum: number = 0;
@@ -20,8 +20,8 @@ function addTwoNumbers(
   while (l1 || l2 || carry) {
     a = l1 ? l1.val : 0;
     b = l2 ? l2.val : 0;
-    sum=a + b + carry;
-    rem=sum % 10;
+    sum = a + b + carry;
+    rem = sum % 10;
     carry = ~~(sum / 10);
     output.push(rem);
     l1 = l1 ? l1.next : null;
@@ -30,13 +30,13 @@ function addTwoNumbers(
   if (output.length > 1 && output[output.length - 1] == 0) {
     output.pop();
   }
-  return makeList(output);
+  return makeList2(output);
 }
 
-function makeList(nums: number[]): ListNode {
-  let listHead: ListNode = new ListNode(null);
+function makeList2(nums: number[]): ListNode2 {
+  let listHead: ListNode2 = new ListNode2(null);
   while (nums.length > 0) {
-    let newNode: ListNode = new ListNode(nums[nums.length - 1]);
+    let newNode: ListNode2 = new ListNode2(nums[nums.length - 1]);
     nums.splice(nums.length - 1, 1);
     if (listHead.val != null) {
       newNode.next = listHead;
@@ -46,10 +46,10 @@ function makeList(nums: number[]): ListNode {
   return listHead;
 }
 
-function addTwoNumbersP(l1: number[], l2: number[]): ListNode {
-  let p: ListNode = makeList(l1);
-  let q: ListNode = makeList(l2);
+function addTwoNumbersP(l1: number[], l2: number[]): ListNode2 {
+  let p: ListNode2 = makeList2(l1);
+  let q: ListNode2 = makeList2(l2);
   return addTwoNumbers(p, q);
 }
 
-module.exports = addTwoNumbersP;
+module.exports = {addTwoNumbersP, makeList2, ListNode2};

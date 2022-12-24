@@ -1,20 +1,25 @@
-const funcloaded = require('./3');
+const funcLoaded = require('./3');
 
 describe('3. Longest Substring Without Repeating Characters', function () {
     beforeEach(()=>{
         console.log('======================================================')
     });
     it('Test Case 1', () => {
-        expect(funcloaded("abcabcbb")).toEqual(3);
+        expect(funcLoaded("abcabcbb")).toEqual(3);
     });
 
     it('Test Case 2', () => {
 
-        expect(funcloaded("bbbbb")).toEqual(1);
+        expect(funcLoaded("bbbbb")).toEqual(1);
     });
     it('Test Case 3', () => {
 
-        expect(funcloaded("pwwkew")).toEqual(3);
+        expect(funcLoaded("pwwkew")).toEqual(3);
+    });
+
+    it('Test Case 4', () => {
+
+        expect(funcLoaded("aab")).toEqual(2);
     });
 
     afterEach(()=>{

@@ -14,11 +14,12 @@ module.exports = FUNC;
     
     const testcase = (input, expect) => {
         result = reverseString.apply(null, input);
+        console.log("Output: ",{ input })
         //result = input;
         expected = expect;
         
-        console.log("Output: ",result)
-        console.log("Expected: ",expected)
+        console.log("Output: ",{ result })
+        console.log("Expected: ",{ expected })
         
         assert.ok(result,expected,new Error(setErr(result,expected)));
     };
